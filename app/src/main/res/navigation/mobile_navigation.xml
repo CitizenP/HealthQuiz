@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_sleep">
+
+    <fragment
+        android:id="@+id/nav_sleep"
+        android:name="edu.ufp.pam.project.healthquiz.ui.sleep.SleepFragment"
+        android:label="@string/sleep"
+        tools:layout="@layout/fragment_sleep" />
+
+    <fragment
+        android:id="@+id/nav_wellbeing_1"
+        android:name="edu.ufp.pam.project.healthquiz.ui.gallery.GalleryFragment"
+        android:label="@string/wellbeing_1"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_wellbeing_2"
+        android:name="edu.ufp.pam.project.healthquiz.ui.slideshow.SlideshowFragment"
+        android:label="@string/wellbeing_2"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>
