@@ -2,6 +2,8 @@ package edu.ufp.pam.project.healthquiz
 
 import android.os.Bundle
 import android.view.Menu
+import android.widget.ImageButton
+import android.widget.TextView
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -42,6 +44,12 @@ class QuizNavDrawerActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        val buttonOk = findViewById<ImageButton>(R.id.btnAgree)
+        buttonOk.setOnClickListener{ view ->
+            val text = findViewById<TextView>(R.id.txtSleep)
+            text.text = "I feel totally rested after this night's sleep"
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

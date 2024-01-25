@@ -1,4 +1,4 @@
-package edu.ufp.pam.project.healthquiz.ui.sleep
+package edu.ufp.pam.project.healthquiz.ui.quiz
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -7,11 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import edu.ufp.pam.project.healthquiz.R
 import edu.ufp.pam.project.healthquiz.databinding.FragmentSleepBinding
 
-class SleepFragment : Fragment() {
-
+class QuizFragment : Fragment() {
     private var _binding : FragmentSleepBinding? = null
     private val binding get() = _binding!!
 
@@ -20,11 +18,11 @@ class SleepFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val sleepViewModel = ViewModelProvider(this).get(SleepViewModel::class.java)
+        val quizViewModel = ViewModelProvider(this).get(QuizViewModel::class.java)
         _binding = FragmentSleepBinding.inflate(inflater,container, false)
         val root : View = binding.root
         val textView : TextView = binding.txtSleep
-        sleepViewModel.text.observe(viewLifecycleOwner) {
+        quizViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
 

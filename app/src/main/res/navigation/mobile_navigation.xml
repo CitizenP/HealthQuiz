@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/nav_sleep"
-        android:name="edu.ufp.pam.project.healthquiz.ui.sleep.SleepFragment"
+        android:name="edu.ufp.pam.project.healthquiz.ui.quiz.QuizFragment"
         android:label="@string/sleep"
-        tools:layout="@layout/fragment_sleep" />
+        tools:layout="@layout/fragment_quiz" />
 
     <fragment
         android:id="@+id/nav_wellbeing_1"
-        android:name="edu.ufp.pam.project.healthquiz.ui.gallery.GalleryFragment"
+        android:name="edu.ufp.pam.project.healthquiz.ui.quiz.QuizFragment"
         android:label="@string/wellbeing_1"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_wellbeing_2"
-        android:name="edu.ufp.pam.project.healthquiz.ui.slideshow.SlideshowFragment"
+        android:name="edu.ufp.pam.project.healthquiz.ui.quiz.QuizFragment"
         android:label="@string/wellbeing_2"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>
