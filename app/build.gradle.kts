@@ -82,8 +82,6 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion")
     // For Kotlin use lifecycle-reactivestreams-ktx
     implementation("androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycleVersion")
-    // for lifecycle extensions
-    implementation("android.arch.lifecycle:extensions:1.1.1")
 
     // Support for Room DB management
     // The Room persistence library provides an abstraction layer over SQLite to allow for more
