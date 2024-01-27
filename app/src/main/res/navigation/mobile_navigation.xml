@@ -15,11 +15,11 @@
         android:id="@+id/nav_wellbeing_1"
         android:name="edu.ufp.pam.project.healthquiz.ui.quiz.QuizFragment"
         android:label="@string/wellbeing_1"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_quiz" />
 
     <fragment
         android:id="@+id/nav_wellbeing_2"
         android:name="edu.ufp.pam.project.healthquiz.ui.quiz.QuizFragment"
         android:label="@string/wellbeing_2"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_quiz" />
 </navigation>
