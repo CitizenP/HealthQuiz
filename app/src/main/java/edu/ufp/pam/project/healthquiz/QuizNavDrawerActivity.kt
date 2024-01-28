@@ -44,12 +44,6 @@ class QuizNavDrawerActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-
-//        val buttonOk = findViewById<ImageButton>(R.id.btnAgree)
-//        buttonOk.setOnClickListener{ view ->
-//            val text = findViewById<TextView>(R.id.txtSleep)
-//            text.text = "I feel totally rested after this night's sleep"
-//        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
