@@ -1,14 +1,14 @@
-package edu.ufp.pam.project.healthquiz.ui.quiz
+package edu.ufp.pam.project.healthquiz.ui.quiz2
 
 import android.content.Intent
+import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import edu.ufp.pam.project.healthquiz.MainActivity
 import edu.ufp.pam.project.healthquiz.R
@@ -16,20 +16,22 @@ import edu.ufp.pam.project.healthquiz.databinding.FragmentQuizBinding
 import edu.ufp.pam.project.healthquiz.db.QuizDatabase
 import edu.ufp.pam.project.healthquiz.db.quizzes.QuizzResult
 import edu.ufp.pam.project.healthquiz.db.quizzes.QuizzResultRepository
+import edu.ufp.pam.project.healthquiz.ui.quiz.QuizViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
-import java.util.*
+import java.util.Date
+import java.util.Locale
 
-class QuizFragment : Fragment() {
+class QuizFragment2 : Fragment() {
     private var _binding: FragmentQuizBinding? = null
     private val binding get() = _binding!!
     private lateinit var quizViewModel: QuizViewModel
     private lateinit var quizResultRepository: QuizzResultRepository
     private lateinit var currentDate: String
     //private var userNumber: Int = 1 // user's identification logic
-    private val totalQuestions = 2 // total number of questions in quiz
-    private val quizNumber = 1 //
+    private val totalQuestions = 3// total number of questions in quiz
+    private val quizNumber = 3 //
     private var userId: Int = -1
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -60,14 +62,15 @@ class QuizFragment : Fragment() {
         var currentState = 1
 
 
-        text.text = getString(R.string.quiz_1_question_1)
+        text.text = getString(R.string.quiz_3_question_1)
 
 
         val commonOnClickListener = View.OnClickListener { view ->
             // Move to the next state or go back to the main activity
             val newTextResId = when (currentState) {
-                1 -> R.string.quiz_1_question_2
-                else -> R.string.quiz_1_question_1
+                1 -> R.string.quiz_3_question_2
+                2 -> R.string.quiz_3_question_3
+                else -> R.string.quiz_3_question_1
             }
 
             val questionNumber = currentState

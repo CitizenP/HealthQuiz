@@ -1,17 +1,12 @@
 package edu.ufp.pam.project.healthquiz.ui.login
 
-import android.app.Application
-import android.content.Intent
 import android.util.Log
-import androidx.databinding.Bindable
-import androidx.databinding.Observable
-import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
-import edu.ufp.pam.project.healthquiz.QuizNavDrawerActivity
+
 import edu.ufp.pam.project.healthquiz.db.users.User
 import edu.ufp.pam.project.healthquiz.db.users.UserRepository
 import kotlinx.coroutines.CoroutineScope

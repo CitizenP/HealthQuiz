@@ -2,8 +2,6 @@ package edu.ufp.pam.project.healthquiz
 
 import android.os.Bundle
 import android.view.Menu
-import android.widget.ImageButton
-import android.widget.TextView
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -13,6 +11,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import edu.ufp.pam.project.healthquiz.R
 import edu.ufp.pam.project.healthquiz.databinding.ActivityQuizNavDrawerBinding
 
 class QuizNavDrawerActivity : AppCompatActivity() {

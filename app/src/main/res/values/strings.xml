@@ -12,4 +12,15 @@
     <string name="wellbeing_2">Wellbeing 2</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="quiz_1_question_1">I slept very well and feel that my sleep was totally restorative.</string>
+    <string name="quiz_1_question_2">I feel totally rested after this night\'s sleep.</string>
+    <string name="quiz_2_question_1">I related easily to the people around me.</string>
+    <string name="quiz_2_question_2">I was able to face difficult situations in a positive way.</string>
+    <string name="quiz_2_question_3">I felt that others liked me and appreciated me.</string>
+    <string name="quiz_2_question_4">I felt satisfied with what I was able to achieve, I felt proud of myself.</string>
+    <string name="quiz_2_question_5">My life was well balanced between my family, personal and academic activities.</string>
+    <string name="quiz_3_question_1">I felt emotionally balanced.</string>
+    <string name="quiz_3_question_2">I felt good, at peace with myself.</string>
+    <string name="quiz_3_question_3">I felt confident.</string>
 </resources>

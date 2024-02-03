@@ -6,6 +6,8 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
+import edu.ufp.pam.project.healthquiz.db.quizzes.QuizzResult
+import edu.ufp.pam.project.healthquiz.db.quizzes.QuizzResultDao
 import edu.ufp.pam.project.healthquiz.db.users.User
 import edu.ufp.pam.project.healthquiz.db.users.UserDAO
 import kotlinx.coroutines.CoroutineScope
@@ -13,12 +15,12 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 @Database(
-    entities = [User::class],
-    version = 6
+    entities = [User::class, QuizzResult::class],
+    version = 7
 )
 abstract class QuizDatabase : RoomDatabase() {
     abstract val userDao: UserDAO
-
+    abstract val quizzDao: QuizzResultDao
     // Behaves like a Singleton
     companion object {
         @Volatile

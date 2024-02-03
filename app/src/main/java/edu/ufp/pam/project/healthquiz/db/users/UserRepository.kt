@@ -18,4 +18,5 @@ class UserRepository(private val userDAO: UserDAO) {
         Log.i(this.javaClass.simpleName, "insertUser(): inserting user $user")
         return userDAO.insertUser(user)
     }
+
 }

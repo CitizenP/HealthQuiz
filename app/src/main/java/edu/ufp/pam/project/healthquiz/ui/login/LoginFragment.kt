@@ -9,11 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageButton
-import android.widget.TextView
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.Observer
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.NavHostFragment
 import edu.ufp.pam.project.healthquiz.QuizNavDrawerActivity
@@ -60,6 +57,10 @@ class LoginFragment : Fragment() {
                     if (user != null) {
                         if (user.password == edtPassword.text.toString()) {
                             val intent = Intent(root.context, QuizNavDrawerActivity::class.java)
+
+                            // Pass the user ID to the QuizFragment
+                            intent.putExtra("USER_ID", user.id)
+
                             startActivity(intent)
                         } else {
                             Toast.makeText(
